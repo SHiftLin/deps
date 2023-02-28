@@ -11,3 +11,5 @@ sudo apt install -y nodejs
 
 sudo apt install zsh percol
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+sed -i 's/ZSH_THEME=".*"/ZSH_THEME="dpoggi"/g' ~/.zshrc
