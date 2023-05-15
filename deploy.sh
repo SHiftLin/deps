@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install -y vim git net-tools gcc iperf3 p7zip-full libpcre3 libpcre3-dev zlib1g zlib1g-dev screen htop iftop iotop mosh curl make unzip python3 python3-pip libssl-dev
+sudo apt install -y vim git net-tools wget gcc iperf3 p7zip-full libpcre3 libpcre3-dev zlib1g zlib1g-dev screen htop iftop iotop mosh curl make unzip python3 python3-pip libssl-dev
 
 python3 -m pip install numpy
 
