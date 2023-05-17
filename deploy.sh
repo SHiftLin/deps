@@ -9,7 +9,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
 sudo apt install -y nodejs
 
-sudo apt install zsh percol
+sudo apt install -y zsh percol
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="dpoggi"/g' ~/.zshrc
+sed -i 's/plugins=(.*)/plugins=(git percol)/g' ~/.zshrc
