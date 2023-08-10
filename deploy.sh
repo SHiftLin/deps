@@ -6,7 +6,8 @@ python3 -m pip install numpy
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 #https://github.com/nodesource/distributions#debinstall
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - 
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - 
+sudo apt update
 sudo apt install -y nodejs
 
 sudo apt install -y zsh percol
