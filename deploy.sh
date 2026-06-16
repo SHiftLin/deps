@@ -4,7 +4,6 @@ sudo apt install -y vim git net-tools wget gcc p7zip-full libpcre3 libpcre3-dev 
 
 sudo DEBIAN_FRONTEND=noninteractive apt install -y iperf3
 
-python3 -m pip install numpy
 
 # https://github.com/nodesource/distributions#debinstall
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - 
