@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-sudo apt install -y vim git net-tools wget gcc p7zip-full libpcre3 libpcre3-dev zlib1g zlib1g-dev screen htop iftop iotop mosh curl make unzip python3 python3-pip libssl-dev
+sudo apt install -y vim git net-tools wget gcc p7zip-full libpcre3 libpcre3-dev zlib1g zlib1g-dev screen htop iftop iotop mosh curl make unzip python3 python3-pip libssl-dev jq
 
 sudo DEBIAN_FRONTEND=noninteractive apt install -y iperf3
 
