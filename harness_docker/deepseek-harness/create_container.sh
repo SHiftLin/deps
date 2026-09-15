@@ -7,7 +7,7 @@ PROJECTS_PATH="${PROJECTS_PATH:-$HOME/dsh_projects}"
 # any missing one as root, leaving it unwritable inside the container.
 mkdir -p "${PROJECTS_PATH}" "${HOME}/.dsh"
 
-docker run -dit --name dsh \
+sudo docker run -dit --name dsh \
   --restart unless-stopped \
   --network host \
   -v "${PROJECTS_PATH}:/projects" \

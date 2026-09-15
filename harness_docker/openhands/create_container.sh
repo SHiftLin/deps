@@ -7,7 +7,7 @@ PROJECTS_PATH="${PROJECTS_PATH:-$HOME/oh_projects}"
 # any missing one as root, leaving it unwritable inside the container.
 mkdir -p "${PROJECTS_PATH}" "${HOME}/.openhands"
 
-docker run -dit --name openhands \
+sudo docker run -dit --name openhands \
   --restart unless-stopped \
   -p 8000:8000 \
   -v "${PROJECTS_PATH}:/projects" \

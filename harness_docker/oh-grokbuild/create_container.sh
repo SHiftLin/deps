@@ -9,7 +9,7 @@ PROJECTS_PATH="${PROJECTS_PATH:-$HOME/grok_projects}"
 # any missing one as root, leaving it unwritable inside the container.
 mkdir -p "${PROJECTS_PATH}" "${HOME}/.grokbuild" "${HOME}/.oh-grok"
 
-docker run -dit --name grokbuild --restart unless-stopped \
+sudo docker run -dit --name grokbuild --restart unless-stopped \
   -p 8888:8888 \
   -v "${PROJECTS_PATH}:/projects" \
   -v "${HOME}/.grokbuild:/home/grok/.grok" \
