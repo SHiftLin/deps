@@ -291,6 +291,6 @@ if __name__ == "__main__":
             print(
                 f"--- turn {turn} ---\n{text}\ntool_calls={[tc_name(t) for t in tool_calls]}")
 
-    run("claude-opus-4-8")     # -> Anthropic Messages API
+    run("claude-opus-5")     # -> Anthropic Messages API
     run("gpt-5.1-codex")       # -> Responses API
     run("deepseek-v4-pro")     # -> Chat Completions API
