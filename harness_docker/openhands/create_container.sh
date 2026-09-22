@@ -13,3 +13,11 @@ sudo docker run -dit --name openhands \
   -v "${PROJECTS_PATH}:/projects" \
   -v "${HOME}/.openhands:/home/openhands/.openhands" \
   ghcr.io/openhands/agent-canvas:latest
+
+
+# mac
+# docker run -dit  --name openhands \
+#   -v /var/run/docker.sock:/var/run/docker.sock \
+#   -v $HOME/.openhands:/.openhands \
+#   -p 8000:8000 \
+#   ghcr.io/openhands/agent-canvas:latest
